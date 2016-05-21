@@ -5,24 +5,47 @@ Description: Javascript Area/Perimeter Calculator -->
 <html>
 
 <head>
-    <title>Area & Perimeter Calculator</title> 
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript" src="menu.js"></script>
+<title>Area & Perimeter Calculator</title>
 </head>
 <body>
-<div>
- <h1><b>Area & Perimeter Calculator</b></h1>
-<!--  User instructions -->
-        <p>Enter the width and height below and click "Calculate"</p>   
-Width <input type="Text" name="width" id="width" size="4">  
-Height <input type="Text" id="height" name="height" size="4" onkeyup=""> <br><br>
-Area <input type="Text" name="area" id="area" size="4"> <br><br>
-Perimeter <input type="Text" name="Perimeter?" id="perimeter" size="4"> <br><br>
-
-<input type="button" name="Area" id="area" size="4" onclick="calculateArea()" value="Area">
-<input type="button" name="Perimeter?" id="perimeter" size="4" onclick="calculatePerimeter()"    value="Perimeter">
 
 
-<!-- Area formula -->
-<script type="text/javascript">
+	<!-- Horizontal Menu -->
+	<div id="sse1">
+		<div id="sses1">
+			<ul>
+				<li><a href="?menu=1&skin=2&p=Javascript-Menus">HOME</a></li>
+				<li><a href="?menu=1&skin=2&p=Horizontal-Menus">ABOUT US</a></li>
+				<li><a href="?menu=1&skin=2&p=Web-Menus">STAY CONNECTED</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div>
+		<h1>
+			<b>Area & Perimeter Calculator</b>
+		</h1>
+		<!--  User instructions -->
+		<p>Enter the width and height below and click "Calculate."</p>
+		Width <input type="Text" name="width" id="width" size="4">
+		Height <input type="Text" id="height" name="height" size="4"
+			onkeyup=""> <br>
+		<br> Area <input type="Text" name="area" id="area" size="4">
+		<br>
+		<br> Perimeter <input type="Text" name="Perimeter?"
+			id="perimeter" size="4"> <br>
+		<br> <input type="button" name="Area" id="area" size="4"
+			onclick="calculateArea()" value="Area"> <input type="button"
+			name="Perimeter?" id="perimeter" size="4"
+			onclick="calculatePerimeter()" value="Perimeter">
+
+
+		<!-- Area formula -->
+		<script type="text/javascript">
 function calculateArea() {
   var width = +document.getElementById("width").value;
   var height =+document.getElementById("height").value;
@@ -37,8 +60,9 @@ function calculatePerimeter() {
   document.getElementById("perimeter").value = perimeter;
 
 }     
- </script>      
- 
-</div>
-​</body>
+ </script>
+
+	</div>
+	​
+</body>
 </html>
