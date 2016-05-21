@@ -1,3 +1,4 @@
+
 #sse1 {
 	/*main menu background*/
 	background-color: #222;
@@ -32,12 +33,21 @@
 #sses1 li.highlight {
 	background-color: #ffff80;
 	top: 36px;
-	height: 2px;
+	height: 4px;
 	border-bottom: solid 1px #C00;
 	z-index: 1;
 	position: absolute;
 	overflow: hidden;
 }
+
+
+#main  {
+	color: black;
+	font: bold 12px arial;
+	text-decoration: none;
+}
+
+
 
 #sses1 li a {
 	box-sizing: content-box;
@@ -46,11 +56,21 @@
 	margin: 0 20px;
 	/*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
 	color: #fff;
-	font: normal 12px arial;
+	font: bold 12px arial;
 	text-align: center;
 	text-decoration: none;
 	float: left;
 	display: block;
 	position: relative;
 	z-index: 2;
+}
+footer {
+  position: absolute;
+  color: white;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #000000;
+  text-align: center;
 }
