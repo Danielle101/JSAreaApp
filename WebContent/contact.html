@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript" src="menu.js"></script>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Contact Us</title>
 </head>
 <body>
-
+<!-- Horizontal Menu -->
+	<div id="sse1">
+		<div id="sses1">
+			<ul>
+				<li><a href="JSAreaApp.html">HOME</a></li>
+				<li><a href="?menu=1&skin=2&p=Horizontal-Menus">ABOUT US</a></li>
+				<li><a href="contact.html">STAY CONNECTED</a></li>
+			</ul>
+		</div>
+	</div>
+<form id="contact-form" action="/" method="post">
+        <h3>Stay Connected</h3>
+        <h4>Fill in the form below, and we'll get back to you ASAP.</h4>
+        <div>
+                <label>
+                        <span>Name: (required)</span>
+                        <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Email: (required)</span>
+                        <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Telephone: (required)</span>
+                        <input placeholder="Please enter your number" type="tel" tabindex="3" required>
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Website: (required)</span>
+                        <input placeholder="Begin with http://" type="url" tabindex="4" required>
+                </label>
+        </div>
+        <div>
+                <label>
+                        <span>Message: (required)</span>
+                        <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+                </label>
+        </div>
+        <div>
+                <button name="submit" type="submit" id="contact-submit">Send Email</button>
+        </div>
+</form>
 </body>
 </html>
